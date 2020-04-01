@@ -3,14 +3,17 @@ package com.example.project3a;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.sql.ClientInfoStatus;
 import java.util.List;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     private List<String> values;
+    private List<String> description;
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
@@ -19,6 +22,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         // each data item is just a string in this case
         TextView txtHeader;
         TextView txtFooter;
+        ImageView icon;
         View layout;
 
         ViewHolder(View v) {
@@ -26,22 +30,25 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
             layout = v;
             txtHeader = (TextView) v.findViewById(R.id.firstLine);
             txtFooter = (TextView) v.findViewById(R.id.secondLine);
+            icon = (ImageView) v.findViewById(R.id.icon);
         }
     }
 
-    public void add(int position, String item) {
+    /*public void add(int position, String item) {
         values.add(position, item);
         notifyItemInserted(position);
-    }
+    }*/
 
-    public void remove(int position) {
+    private void remove(int position) {
         values.remove(position);
+        description.remove(position);
         notifyItemRemoved(position);
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public ListAdapter(List<String> myDataset) {
+    public ListAdapter(List<String> myDataset, List<String> description) {
         values = myDataset;
+        this.description = description;
     }
 
     // Create new views (invoked by the layout manager)
@@ -65,14 +72,14 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         // - replace the contents of the view with that element
         final String name = values.get(position);
         holder.txtHeader.setText(name);
+        holder.txtFooter.setText(description.get(position));
+        //holder.icon;
         holder.txtHeader.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 remove(position);
             }
         });
-
-        holder.txtFooter.setText("Footer: " + name);
     }
 
     // Return the size of your dataset (invoked by the layout manager)

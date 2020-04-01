@@ -23,11 +23,13 @@ public class MainActivity extends AppCompatActivity {
         // use a linear layout manager
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        List<String> input = new ArrayList<>();
-        for (int i = 0; i < 100; i++) {
-            input.add("Test" + i);
+        List<String> inputTitle = new ArrayList<>();
+        List<String> inputDescription = new ArrayList<>();
+        for (int i = 0; i < 50; i++) {
+            inputTitle.add("Test" + i);
+            inputDescription.add("Description n " + i);
         }// define an adapter
-        mAdapter = new ListAdapter(input);
+        mAdapter = new ListAdapter(inputTitle, inputDescription);
         recyclerView.setAdapter(mAdapter);
     }
 }
