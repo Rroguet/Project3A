@@ -1,5 +1,6 @@
 package com.example.project3a;
 
+import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,12 +9,12 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.sql.ClientInfoStatus;
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
-    private List<String> values;
-    private List<String> description;
+    private List<Galaxie> values;
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
@@ -41,20 +42,17 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
 
     private void remove(int position) {
         values.remove(position);
-        description.remove(position);
         notifyItemRemoved(position);
     }
 
-    // Provide a suitable constructor (depends on the kind of dataset)
-    public ListAdapter(List<String> myDataset, List<String> description) {
-        values = myDataset;
-        this.description = description;
+    public ListAdapter(List<Galaxie> galaxies) {
+        values = galaxies;
     }
 
     // Create new views (invoked by the layout manager)
     @Override
     public ListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
-                                                   int viewType) {
+                                                     int viewType) {
         // create a new view
         LayoutInflater inflater = LayoutInflater.from(
                 parent.getContext());
@@ -70,10 +68,11 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     public void onBindViewHolder(ViewHolder holder, final int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
-        final String name = values.get(position);
-        holder.txtHeader.setText(name);
-        holder.txtFooter.setText(description.get(position));
-        //holder.icon;
+        final Galaxie galaxie = values.get(position);
+        holder.txtHeader.setText(galaxie.getName());
+        holder.txtFooter.setText("Constellation: "+galaxie.getConstellation());
+        Picasso.get().load(galaxie.getUrl()).fit().into(holder.icon);
+
         holder.txtHeader.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
