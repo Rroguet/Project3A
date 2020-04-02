@@ -1,5 +1,5 @@
 {
-  "total":"6",
+  "total":"15",
   "galaxies":[
     {
       "name":"Voie lactée",
@@ -20,6 +20,51 @@
       "name":"Galaxie du cigare",
       "constellation": "Grande Ourse",
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Messier82.jpg/100px-Messier82.jpg"
+    },
+    {
+      "name":"Voie lactée",
+      "constellation": "Sagittaire",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ESO_-_Milky_Way.jpg/800px-ESO_-_Milky_Way.jpg"
+    },
+    {
+      "name":"Voie lactée",
+      "constellation": "Sagittaire",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ESO_-_Milky_Way.jpg/800px-ESO_-_Milky_Way.jpg"
+    },
+    {
+      "name":"Voie lactée",
+      "constellation": "Sagittaire",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ESO_-_Milky_Way.jpg/800px-ESO_-_Milky_Way.jpg"
+    },
+    {
+      "name":"Voie lactée",
+      "constellation": "Sagittaire",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ESO_-_Milky_Way.jpg/800px-ESO_-_Milky_Way.jpg"
+    },
+    {
+      "name":"Voie lactée",
+      "constellation": "Sagittaire",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ESO_-_Milky_Way.jpg/800px-ESO_-_Milky_Way.jpg"
+    },
+    {
+      "name":"Voie lactée",
+      "constellation": "Sagittaire",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ESO_-_Milky_Way.jpg/800px-ESO_-_Milky_Way.jpg"
+    },
+    {
+      "name":"Voie lactée",
+      "constellation": "Sagittaire",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ESO_-_Milky_Way.jpg/800px-ESO_-_Milky_Way.jpg"
+    },
+    {
+      "name":"Voie lactée",
+      "constellation": "Sagittaire",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ESO_-_Milky_Way.jpg/800px-ESO_-_Milky_Way.jpg"
+    },
+    {
+      "name":"Voie lactée",
+      "constellation": "Sagittaire",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ESO_-_Milky_Way.jpg/800px-ESO_-_Milky_Way.jpg"
     },
     {
       "name":"Voie lactée",
