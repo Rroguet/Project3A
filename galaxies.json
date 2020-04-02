@@ -1,0 +1,35 @@
+{
+  "total": "6",
+  "galaxies": [
+    {
+      "name":"Voie lactée",
+      "constellation": "Sagittaire",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ESO_-_Milky_Way.jpg/800px-ESO_-_Milky_Way.jpg"
+    },
+    {
+      "name":"Galaxie d'Andromède",
+      "constellation": "Andromède",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/M31bobo.jpg/100px-M31bobo.jpg"
+    },
+    {
+      "name":"Galaxie de la Roue de chariot",
+      "constellation": "Sculteur",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Cartwheel_Galaxy.jpg/100px-Cartwheel_Galaxy.jpg"
+    },
+    {
+      "name":"Galaxie du cigare",
+      "constellation": "Grande Ourse",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Messier82.jpg/100px-Messier82.jpg"
+    },
+    {
+      "name":"Voie lactée",
+      "constellation": "Sagittaire",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ESO_-_Milky_Way.jpg/800px-ESO_-_Milky_Way.jpg"
+    },
+    {
+      "name":"Voie lactée",
+      "constellation": "Sagittaire",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ESO_-_Milky_Way.jpg/800px-ESO_-_Milky_Way.jpg"
+    }
+  ]
+}
