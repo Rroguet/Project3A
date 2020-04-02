@@ -29,7 +29,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
             super(v);
             layout = v;
             txtHeader = (TextView) v.findViewById(R.id.firstLine);
-            txtFooter = (TextView) v.findViewById(R.id.secondLine);
+            txtFooter = (TextView)  v.findViewById(R.id.secondLine);
             icon = (ImageView) v.findViewById(R.id.icon);
         }
     }
