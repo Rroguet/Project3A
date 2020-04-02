@@ -6,7 +6,7 @@ public class RestGalaxiesResponse {
     private Integer total;
     private List<Galaxie> galaxies;
 
-    public Integer getTotal() {
+    public int getTotal() {
         return total;
     }
 
