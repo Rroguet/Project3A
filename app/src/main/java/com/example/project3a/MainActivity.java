@@ -4,12 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
 import java.util.List;
 
 import retrofit2.Call;
@@ -25,13 +29,32 @@ public class MainActivity extends AppCompatActivity {
     private ListAdapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     private List<Galaxie> galaxieList;
+    private SharedPreferences sharedPreferences;
+    private Gson gson;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        makeAPIcall();
+        sharedPreferences = getSharedPreferences("application_Galaxies", Context.MODE_PRIVATE);
+        gson = new GsonBuilder()
+                .setLenient()
+                .create();
+
+        galaxieList = getDataFromCache();
+        if(galaxieList != null) showList();
+        else makeAPIcall();
+    }
+
+    private List<Galaxie> getDataFromCache(){
+        String jsonGalaxie = sharedPreferences.getString(Constants.KEY_GALAXIE_LIST, null);
+
+        if(jsonGalaxie == null) return null;
+        else {
+            Type listType = new TypeToken<List<Galaxie>>() {}.getType();
+            return gson.fromJson(jsonGalaxie, listType);
+        }
     }
 
     private void showList(){
@@ -45,9 +68,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void makeAPIcall(){
-        Gson gson = new GsonBuilder()
-                .setLenient()
-                .create();
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
@@ -62,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<RestGalaxiesResponse> call, Response<RestGalaxiesResponse> response) {
                 if(response.isSuccessful() && response.body() != null) {
                     galaxieList = response.body().getGalaxies();
+                    SaveList(galaxieList);
                     showList();
                 }else{
                     showErreur();
@@ -75,7 +96,16 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private void SaveList(List<Galaxie> galaxies){
+        String jsonString = gson.toJson(galaxies);
+        sharedPreferences
+                .edit()
+                .putString(Constants.KEY_GALAXIE_LIST, jsonString)
+                .apply();
+        Toast.makeText(this, "List saved", Toast.LENGTH_SHORT).show();
+    }
+
     private void showErreur(){
-        Toast.makeText(this, "API Error", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Connection failure", Toast.LENGTH_SHORT).show();
     }
 }
