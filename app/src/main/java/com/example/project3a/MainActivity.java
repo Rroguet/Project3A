@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         if(galaxieList != null) showList();
         else makeAPIcall();
     }
+
 
     private List<Galaxie> getDataFromCache(){
         String jsonGalaxie = sharedPreferences.getString(Constants.KEY_GALAXIE_LIST, null);

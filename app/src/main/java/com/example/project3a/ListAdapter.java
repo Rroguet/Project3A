@@ -1,9 +1,12 @@
 package com.example.project3a;
 
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -12,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
+
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     private List<Galaxie> values;
@@ -33,16 +37,15 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
             txtFooter = (TextView)  v.findViewById(R.id.secondLine);
             icon = (ImageView) v.findViewById(R.id.icon);
         }
+
     }
 
-    /*public void add(int position, String item) {
-        values.add(position, item);
-        notifyItemInserted(position);
-    }*/
-
-    private void remove(int position) {
-        values.remove(position);
-        notifyItemRemoved(position);
+    private void Description(int position, Context c) {
+        Intent intent = new Intent(c, DescriptionActivity.class);
+        intent.putExtra(Constants.EXTRA_GALAXIE_NAME, values.get(position).getName());
+        intent.putExtra(Constants.EXTRA_GALAXIE_IMAGE, values.get(position).getUrl());
+        //intent.putExtra(Constants.EXTRA_GALAXIE_DESCRIPTION, values.get(position).getDescription());
+        c.startActivity(intent);
     }
 
     public ListAdapter(List<Galaxie> galaxies) {
@@ -76,7 +79,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         holder.txtHeader.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                remove(position);
+                Description(position, v.getContext());
             }
         });
     }

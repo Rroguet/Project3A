@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Galaxies les plus connues</string>
+    <string name="button_back_list">Retourner a la liste</string>
+    <string name="image_description">galaxie</string>
 </resources>
