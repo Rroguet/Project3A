@@ -4,77 +4,93 @@
     {
       "name":"Voie lactée",
       "constellation": "Sagittaire",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ESO_-_Milky_Way.jpg/800px-ESO_-_Milky_Way.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ESO_-_Milky_Way.jpg/800px-ESO_-_Milky_Way.jpg",
+      "description":"La Voie lactée, aussi nommée la Galaxie (avec une majuscule), est une galaxie spirale barrée qui comprend de 200 à 400 milliards d'étoiles et au minimum 100 milliards de planètes. Son diamètre est estimé à environ 100 000 à 120 000 années-lumière, voire à 150 000 ou à 200 000 années-lumière bien que le nombre d'étoiles au-delà de 120 000 années-lumière soit très faible. Elle et son cortège de galaxies satellites font partie du Groupe local, lui-même rattaché au superamas de la Vierge appartenant lui-même à Laniakea. Le Système solaire, qui en fait partie, se situe à environ 27 000 année-lumière du centre de la Voie lactée, lequel est constitué d'un trou noir supermassif."
+
     },
     {
       "name":"Galaxie d'Andromède",
       "constellation": "Andromède",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/M31bobo.jpg/100px-M31bobo.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/M31bobo.jpg/100px-M31bobo.jpg",
+      "description":"La galaxie d'Andromède, également identifiée sous les numéros M31 dans le Catalogue de Messier et NGC 224, est une galaxie spirale située à environ 2,55 millions d'années-lumière du Soleil, dans la constellation d'Andromède. Appelée grande nébuleuse d’Andromède jusqu'à ce que sa vraie nature ait été reconnue dans les années 1920, la galaxie d'Andromède est la galaxie spirale la plus proche de la Voie lactée (toutes classes confondues, la galaxie la plus proche est la naine du Grand Chien) et le plus grand membre du Groupe local d'une soixantaine de galaxies individuelles dont toutes deux font partie. D'un diamètre d'environ 220 000 années-lumière, elle contiendrait environ mille milliards d'étoiles."
     },
     {
       "name":"Galaxie de la Roue de chariot",
       "constellation": "Sculteur",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Cartwheel_Galaxy.jpg/100px-Cartwheel_Galaxy.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Cartwheel_Galaxy.jpg/100px-Cartwheel_Galaxy.jpg",
+      "description":"La galaxie de la Roue de chariot (aussi appelée ESO 350-40) est une galaxie lenticulaire à anneau située à environ 500 millions d'années-lumière du Soleil dans la constellation du Sculpteur. Cette galaxie à un diamètre d'environ 150 000 années-lumière, légèrement plus grande que la Voie lactée. Elle possède une masse d'environ 2,9 à 4,8 milliards de masses solaires et une vitesse de rotation d'environ 217 km/s."
     },
     {
       "name":"Galaxie du cigare",
       "constellation": "Grande Ourse",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Messier82.jpg/100px-Messier82.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Messier82.jpg/100px-Messier82.jpg",
+      "description":"M82 (aussi connu comme NGC 3034 et sous le nom de galaxie du Cigare) est une galaxie à sursaut d'étoiles située dans la constellation de la Grande Ourse à environ 12,7 millions d'années-lumière de la Voie lactée. M82 est environ 5 fois plus lumineuse que la Voie lactée et son centre est des centaines de fois plus lumineux que celui de notre galaxie. On pense que l'intense formation d'étoiles provient de l'interaction gravitationnelle avec sa voisine M81. Comme c'est la galaxie à sursaut de formation d'étoiles la plus rapprochée de la Terre, elle constitue une cible favorite pour l'étude de ce genre de galaxie. La supernova de type 1a SN 2014J a été découverte le 21 janvier 2014 dans M82. En 2014, les astronomes ont découvert la source X ultralumineuse (ULX) M82 X-2. Il s'agit du pulsar le plus brillant connu à ce jour."
     },
     {
       "name":"Galxie-comète",
       "constellation": "Sculpteur",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/CometGalaxy.jpg/100px-CometGalaxy.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/CometGalaxy.jpg/100px-CometGalaxy.jpg",
+      "description":"La Galaxie Comète est une galaxie de l'amas Abell 2667. C'est une galaxie spirale de dimensions 600 000 a.l. A une distance de 3.2 milliards a.l."
     },
     {
       "name":"Objet de Hoag",
       "constellation": "Serpent",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Hoag%27s_object.jpg/100px-Hoag%27s_object.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Hoag%27s_object.jpg/100px-Hoag%27s_object.jpg",
+      "description":"L’objet de Hoag est une galaxie atypique qui prend la forme d'une galaxie à anneau. Elle fut découverte en 1950 par l'astronome Art Hoag qui l'identifia comme une nébuleuse planétaire ou une galaxie particulière. L'objet de Hoag prend la forme d'un anneau presque parfait d'étoiles bleues entourant un noyau plus ancien d'étoiles jaunes. La galaxie est située dans la constellation du Serpent, à environ 600 millions d'années-lumière. Le diamètre apparent du noyau est de 6″, correspondant à 17 ± 0,7 kal, tandis que le diamètre interne de l'anneau est de 28″, soit 75 ± 3 kal, et son diamètre externe de 45″, soit 121 ± 4 kal, légèrement plus grand que la Voie lactée. L'environnement séparant les deux populations stellaires pourrait contenir des amas stellaires trop peu lumineux pour être observés."
     },
     {
       "name":"Grand Nuage de Magellan",
       "constellation": "Dorade/Table",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Large.mc.arp.750pix.jpg/100px-Large.mc.arp.750pix.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Large.mc.arp.750pix.jpg/100px-Large.mc.arp.750pix.jpg",
+      "description":"Le Grand Nuage de Magellan, en abrégé GNM (on trouve aussi souvent LMC dans la littérature en référence à l'anglais Large Magellanic Cloud), est une galaxie naine de type SB(s)m appartenant au Groupe local et située dans les constellations de la Dorade et de la Table. Satellite de la Voie lactée, il s'agit d'une petite galaxie spirale magellanique, caractérisée par une grande barre et un seul bras spiral. La base de données NASA/IPAC rapporte un échantillon de près de 25 000 mesures dont la moyenne donne une distance de 50 ± 3 kpc (∼163 000 a.l.). En 2019, cette distance est déterminée avec une précision de 1 % : 49,59 ± 0,54 kpc. C'est la troisième galaxie la plus proche de la Voie lactée, après les galaxies naines du Grand Chien et du Sagittaire. D'un diamètre de ∼14 000 a.l. (∼4 290 pc), c'est la quatrième plus massive du Groupe local après la galaxie d'Andromède (M31), la Voie lactée et la galaxie du Triangle (M33)."
     },
     {
       "name":"Petit Nuage de Magellan",
       "constellation": "Toucan",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/VISTA%E2%80%99s_view_of_the_Small_Magellanic_Cloud.jpg/100px-VISTA%E2%80%99s_view_of_the_Small_Magellanic_Cloud.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/VISTA%E2%80%99s_view_of_the_Small_Magellanic_Cloud.jpg/100px-VISTA%E2%80%99s_view_of_the_Small_Magellanic_Cloud.jpg",
+      "description":"Le Petit Nuage de Magellan, souvent abrégé en SMC dans la littérature en référence à l'anglais Small Magellanic Cloud, est une galaxie naine de type SB(s)m appartenant au Groupe local et située dans la constellation du Toucan. Satellite de la Voie lactée, il s'agit d'une petite galaxie irrégulière apparentée à une galaxie spirale magellanique dont la barre est visible mais dont le bras spiral est très dispersé. La base de données NASA/IPAC rapporte un échantillon de près de 300 mesures dont la moyenne donne une distance au Soleil de 61 ± 7 kpc (∼199 000 a.l.)."
     },
     {
       "name":"Objet de Mayall",
       "constellation": "Grande Ourse",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Hubble_Interacting_Galaxy_Arp_148_%282008-04-24%29.jpg/100px-Hubble_Interacting_Galaxy_Arp_148_%282008-04-24%29.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Hubble_Interacting_Galaxy_Arp_148_%282008-04-24%29.jpg/100px-Hubble_Interacting_Galaxy_Arp_148_%282008-04-24%29.jpg",
+      "description":"Arp 148, également appelée objet de Mayall, est une galaxie particulière située à environ 500 millions d'années-lumière (152 Mpc) du Soleil, dans la constellation de la Grande Ourse. Plus précisément, il s'agirait d'un objet résultant de la collision de deux galaxies et donnant naissance à une galaxie à anneau avec un fragment de galaxie irrégulier qui en émerge."
     },
     {
       "name":"Galaxie du Moulinet",
       "constellation": "Grande Ourse",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/M101_Zoom.jpg/100px-M101_Zoom.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/M101_Zoom.jpg/100px-M101_Zoom.jpg",
+      "description":"M101, également appelée NGC 5457 ou galaxie du Moulinet, est une galaxie spirale située dans la Grande Ourse et distante d'environ 7 Mpc (∼22,8 millions d'a.l.). M101 est vue exactement du dessus mais ses bras spiraux ne sont visibles qu'avec de grands télescopes. Le diamètre de cette galaxie (170 000 années-lumière) est 70 % plus grand que celui de la Voie lactée (100 000 années-lumière) pour une masse stellaire de l'ordre de 1 000 milliards de masses solaires, environ dix fois la masse de notre galaxie. Une supernova, désignée par SN 2011fe, a été découverte le 24 août 2011 dans cette galaxie."
     },
     {
       "name":"Galaxie du Sombrero",
       "constellation": "Vierge",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/M104_-_Sombrero.jpg/100px-M104_-_Sombrero.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/M104_-_Sombrero.jpg/100px-M104_-_Sombrero.jpg",
+      "description":"M104, appelée aussi galaxie du Sombrero, de magnitude 8 et distante de environ 8,6 Mpc (∼28 millions d'a.l.), est l’une des galaxies les plus connues. Son diamètre de 50 000 années-lumière est comparable à celui de notre Galaxie. Elle possède un noyau très brillant, constitué de vieilles étoiles et masqué très partiellement par de fines poussières. En 2012, son observation par le télescope spatial Spitzer a permis de mettre en évidence que son halo est plus massif qu'on le croyait et relève en fait du type elliptique géant et non spiral. Le procédé de traitement récemment développé permet une visibilité plus performante des détails auparavant perdus dans la luminosité. On peut alors voir certains sillons de poussières qu’il est maintenant possible de suivre jusqu’à la brillante région centrale."
     },
     {
       "name":"Galaxie du Tournesol",
       "constellation": "Chiens de chasse",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/M63.jpg/100px-M63.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/M63.jpg/100px-M63.jpg",
+      "description":"M63 ou Galaxie du Tournesol est découverte en 1779 par Pierre Méchain, et classée la même année par Charles Messier dans son catalogue. Sa structure en forme de spirale a été découverte par Lord Ross au milieu du xixe, elle fut une des première de ce type à être identifiée. Galaxie spirale de type Sb, elle forme un groupe avec M51 et d'autres galaxies. Elle se situe à environ 8 Mpc (∼26,1 millions d'a.l.) de la Terre. En 1971, une supernova de magnitude 11,8 est apparue dans un bras de M63."
     },
     {
       "name":"Galaxie du Têtard",
       "constellation": "Dragon",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/UGC_10214HST.jpg/100px-UGC_10214HST.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/UGC_10214HST.jpg/100px-UGC_10214HST.jpg",
+      "description":"La galaxie du Têtard, également connue sous les matricules Arp 188 et UGC 10214, est une galaxie spirale barrée disloquée située dans la constellation du Dragon à environ 400 millions d'années-lumière (125 Mpc) de la Voie lactée. Elle est remarquable par sa queue de marée longue de plus de 280 000 années-lumière (86 kpc) contenant de nombreux amas stellaires riches en jeunes étoiles bleues. Il s'agit d'une galaxie en interaction résultant probablement du passage d'un compagnon plus petit, visible à travers les bras à l'opposé de la queue, celle-ci étant sans doute un bras de la spirale littéralement « déroulé » par les forces de marée galactique produites par le compagnon incident. Elle est 2,8 fois plus grande que la Voie lactée, elle contiendrait plus de 300 milliards d'étoiles."
     },
     {
       "name":"Galaxie du Tourbillon",
       "constellation": "Chiens de chasse",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Messier51.jpg/100px-Messier51.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Messier51.jpg/100px-Messier51.jpg",
+      "description":"M51, aussi connue comme la galaxie du Tourbillon (Whirlpool Galaxy en anglais) est un couple de galaxies, à environ 8,4 Mpc (∼27,4 millions d'a.l.) de la Terre dans la constellation des Chiens de chasse, composé d'une galaxie spirale régulière massive dont le diamètre est estimé à 100 000 années-lumière et d'une petite galaxie irrégulière. Elle a été découverte en 1773 par Charles Messier. Ses bras spiraux facilement visibles lui ont valu son surnom de « galaxie tourbillon » (Whirlpool Galaxy en anglais), qui a donné son nom à la fonction de hachage Whirlpool. Une supernova a été observée dans la galaxie en 1994. Une autre en 2005, et une troisième a fait son apparition le 1er juin 2011 d'après la revue Ciel et Espace."
     },
     {
       "name":"Galaxie du Triangle",
       "constellation": "Triangle",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/M33_2013s.jpg/100px-M33_2013s.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/M33_2013s.jpg/100px-M33_2013s.jpg",
+      "description":"La galaxie du Triangle, également appelée M33, est une galaxie spirale de type SA(s)cd appartenant au Groupe local et située dans la constellation du Triangle. Sans doute satellite de la galaxie d'Andromède, sa distance au Soleil est assez mal connue. Les mesures actuelles donnent une distance allant de environ 0,73 Mpc (∼2,38 millions d'a.l.) à environ 0,94 Mpc (∼3,07 millions d'a.l.). C'est la troisième galaxie la plus massive du Groupe local après la galaxie d'Andromède et la Voie lactée, et devant le Grand Nuage de Magellan ; avec une masse évaluée à 60 milliards de masses solaires, elle ne représente que 5 % de la masse de la galaxie d'Andromède, la matière noire constituant près de 85 % de cette masse."
     }
   ]
 }
