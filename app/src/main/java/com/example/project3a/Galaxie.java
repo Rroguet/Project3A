@@ -4,6 +4,7 @@ public class Galaxie {
     private String name;
     private String constellation;
     private String url;
+    private String description;
 
     public String getName() {
         return name;
@@ -15,5 +16,9 @@ public class Galaxie {
 
     public String getUrl() {
         return url;
+    }
+
+    public String getDescription() {
+        return description;
     }
 }

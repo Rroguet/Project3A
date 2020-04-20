@@ -25,9 +25,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class MainActivity extends AppCompatActivity {
 
     private static final String BASE_URL = "https://raw.githubusercontent.com/Rroguet/Project3A/master/";
-    private RecyclerView recyclerView;
-    private ListAdapter mAdapter;
-    private RecyclerView.LayoutManager layoutManager;
     private List<Galaxie> galaxieList;
     private SharedPreferences sharedPreferences;
     private Gson gson;
@@ -47,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         else makeAPIcall();
     }
 
+
     private List<Galaxie> getDataFromCache(){
         String jsonGalaxie = sharedPreferences.getString(Constants.KEY_GALAXIE_LIST, null);
 
@@ -58,12 +56,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showList(){
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
-        layoutManager = new LinearLayoutManager(this);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        mAdapter = new ListAdapter(galaxieList);
+        ListAdapter mAdapter = new ListAdapter(galaxieList);
         recyclerView.setAdapter(mAdapter);
     }
 
