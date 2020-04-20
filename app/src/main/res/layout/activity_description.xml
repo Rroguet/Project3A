@@ -20,10 +20,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="330dp"
-        android:layout_height="178dp"
-        android:src="@mipmap/ic_launcher"
+        android:layout_width="281dp"
+        android:layout_height="136dp"
         android:contentDescription="@string/image_description"
+        android:src="@mipmap/ic_launcher"
         app:layout_constraintBottom_toTopOf="@+id/titre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,22 +33,20 @@
         android:id="@+id/titre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="titre"
         android:textColor="#E6FFFFFF"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37" />
+        app:layout_constraintVertical_bias="0.26999998" />
 
     <TextView
         android:id="@+id/textDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="description"
         android:textColor="#E6FFFFFF"
-        android:textSize="25sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonBackList"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"

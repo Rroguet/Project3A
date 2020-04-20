@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,10 +19,22 @@ public class DescriptionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_description);
 
         Intent intent = getIntent();
-        TextView textView = findViewById(R.id.titre);
+        TextView titre = findViewById(R.id.titre);
+        TextView description = findViewById(R.id.textDescription);
         ImageView icon = findViewById(R.id.imageView);
-        textView.setText(intent.getStringExtra(Constants.EXTRA_GALAXIE_NAME));
+        titre.setText(intent.getStringExtra(Constants.EXTRA_GALAXIE_NAME));
+        description.setText(intent.getStringExtra(Constants.EXTRA_GALAXIE_DESCRIPTION));
         Picasso.get().load(intent.getStringExtra(Constants.EXTRA_GALAXIE_IMAGE)).fit().into(icon);
 
+        Button b = findViewById(R.id.buttonBackList);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
     }
+
+
 }

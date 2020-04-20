@@ -5,7 +5,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -26,9 +25,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class MainActivity extends AppCompatActivity {
 
     private static final String BASE_URL = "https://raw.githubusercontent.com/Rroguet/Project3A/master/";
-    private RecyclerView recyclerView;
-    private ListAdapter mAdapter;
-    private RecyclerView.LayoutManager layoutManager;
     private List<Galaxie> galaxieList;
     private SharedPreferences sharedPreferences;
     private Gson gson;
@@ -60,12 +56,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showList(){
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
-        layoutManager = new LinearLayoutManager(this);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        mAdapter = new ListAdapter(galaxieList);
+        ListAdapter mAdapter = new ListAdapter(galaxieList);
         recyclerView.setAdapter(mAdapter);
     }
 

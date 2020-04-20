@@ -2,11 +2,9 @@ package com.example.project3a;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -33,9 +31,9 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         ViewHolder(View v) {
             super(v);
             layout = v;
-            txtHeader = (TextView) v.findViewById(R.id.firstLine);
-            txtFooter = (TextView)  v.findViewById(R.id.secondLine);
-            icon = (ImageView) v.findViewById(R.id.icon);
+            txtHeader = v.findViewById(R.id.firstLine);
+            txtFooter = v.findViewById(R.id.secondLine);
+            icon = v.findViewById(R.id.icon);
         }
 
     }
@@ -44,7 +42,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         Intent intent = new Intent(c, DescriptionActivity.class);
         intent.putExtra(Constants.EXTRA_GALAXIE_NAME, values.get(position).getName());
         intent.putExtra(Constants.EXTRA_GALAXIE_IMAGE, values.get(position).getUrl());
-        //intent.putExtra(Constants.EXTRA_GALAXIE_DESCRIPTION, values.get(position).getDescription());
+        intent.putExtra(Constants.EXTRA_GALAXIE_DESCRIPTION, values.get(position).getDescription());
         c.startActivity(intent);
     }
 
@@ -62,8 +60,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         View v =
                 inflater.inflate(R.layout.row_layout, parent, false);
         // set the view's size, margins, paddings and layout parameters
-        ViewHolder vh = new ViewHolder(v);
-        return vh;
+        return new ViewHolder(v);
     }
 
     // Replace the contents of a view (invoked by the layout manager)
