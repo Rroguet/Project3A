@@ -54,10 +54,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void navigateToDetails(Galaxie galaxie) {
-        Intent intent = new Intent(this, DescriptionActivity.class);
-        intent.putExtra(Constants.EXTRA_GALAXIE_NAME, galaxie.getName());
-        intent.putExtra(Constants.EXTRA_GALAXIE_IMAGE, galaxie.getUrl());
-        intent.putExtra(Constants.EXTRA_GALAXIE_DESCRIPTION, galaxie.getDescription());
+        Intent intent = new Intent(MainActivity.this, DescriptionActivity.class);
+        intent.putExtra(Constants.EXTRA_GALAXIE, Singletons.getGson().toJson(galaxie));
         this.startActivity(intent);
     }
 }
