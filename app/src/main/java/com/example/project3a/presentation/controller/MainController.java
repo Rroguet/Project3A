@@ -3,7 +3,7 @@ package com.example.project3a.presentation.controller;
 import android.content.SharedPreferences;
 
 import com.example.project3a.Constants;
-import com.example.project3a.data.GalaxieAPI;
+import com.example.project3a.Singletons;
 import com.example.project3a.presentation.model.Galaxie;
 import com.example.project3a.presentation.model.RestGalaxiesResponse;
 import com.example.project3a.presentation.view.MainActivity;
@@ -16,8 +16,6 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainController {
 
@@ -50,14 +48,7 @@ public class MainController {
 
     private void makeAPIcall(){
 
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(Constants.BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create(gson))
-                .build();
-
-        GalaxieAPI galaxieAPI = retrofit.create(GalaxieAPI.class);
-
-        Call<RestGalaxiesResponse> call = galaxieAPI.getGalaxieResponse();
+        Call<RestGalaxiesResponse> call = Singletons.getGalaxieAPI().getGalaxieResponse();
         call.enqueue(new Callback<RestGalaxiesResponse>() {
             @Override
             public void onResponse(Call<RestGalaxiesResponse> call, Response<RestGalaxiesResponse> response) {

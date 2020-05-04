@@ -8,6 +8,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.widget.Toast;
 import com.example.project3a.R;
+import com.example.project3a.Singletons;
 import com.example.project3a.presentation.controller.MainController;
 import com.example.project3a.presentation.model.Galaxie;
 import com.google.gson.GsonBuilder;
@@ -24,11 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        controller = new MainController(this,
-            new GsonBuilder()
-                .setLenient()
-                .create(),
-            getSharedPreferences("application_Galaxies", Context.MODE_PRIVATE));
+        controller = new MainController(this, Singletons.getGson(),Singletons.getSharedPreferences(getApplicationContext()));
         controller.onStart();
     }
 
