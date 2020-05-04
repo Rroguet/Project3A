@@ -1,4 +1,4 @@
-package com.example.project3a;
+package com.example.project3a.presentation.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.project3a.Constants;
+import com.example.project3a.R;
 import com.squareup.picasso.Picasso;
 
 public class DescriptionActivity extends AppCompatActivity {

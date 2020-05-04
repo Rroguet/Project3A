@@ -1,4 +1,4 @@
-package com.example.project3a;
+package com.example.project3a.presentation.view;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +10,9 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.project3a.Constants;
+import com.example.project3a.R;
+import com.example.project3a.presentation.model.Galaxie;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

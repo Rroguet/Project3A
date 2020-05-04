@@ -1,4 +1,4 @@
-package com.example.project3a;
+package com.example.project3a.presentation.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -9,6 +9,11 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.project3a.Constants;
+import com.example.project3a.R;
+import com.example.project3a.data.GalaxieAPI;
+import com.example.project3a.presentation.model.Galaxie;
+import com.example.project3a.presentation.model.RestGalaxiesResponse;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
