@@ -4,14 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
+
+import com.example.project3a.Constants;
 import com.example.project3a.R;
 import com.example.project3a.Singletons;
 import com.example.project3a.presentation.controller.MainController;
 import com.example.project3a.presentation.model.Galaxie;
-import com.google.gson.GsonBuilder;
 
 import java.util.List;
 
@@ -35,7 +36,12 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        ListAdapter mAdapter = new ListAdapter(galaxieList);
+        ListAdapter mAdapter = new ListAdapter(galaxieList, new ListAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(Galaxie item) {
+                controller.onItemClick(item);
+            }
+        });
         recyclerView.setAdapter(mAdapter);
     }
 
@@ -45,5 +51,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void showErreur(){
         Toast.makeText(this, "Connection failure", Toast.LENGTH_SHORT).show();
+    }
+
+    public void navigateToDetails(Galaxie galaxie) {
+        Intent intent = new Intent(this, DescriptionActivity.class);
+        intent.putExtra(Constants.EXTRA_GALAXIE_NAME, galaxie.getName());
+        intent.putExtra(Constants.EXTRA_GALAXIE_IMAGE, galaxie.getUrl());
+        intent.putExtra(Constants.EXTRA_GALAXIE_DESCRIPTION, galaxie.getDescription());
+        this.startActivity(intent);
     }
 }

@@ -1,7 +1,6 @@
 package com.example.project3a.presentation.controller;
 
 import android.content.SharedPreferences;
-
 import com.example.project3a.Constants;
 import com.example.project3a.Singletons;
 import com.example.project3a.presentation.model.Galaxie;
@@ -77,8 +76,7 @@ public class MainController {
         view.toastListSave();
     }
 
-
     public void onItemClick(Galaxie galaxie){
-
+        view.navigateToDetails(galaxie);
     }
 }
