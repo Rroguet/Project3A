@@ -1,4 +1,6 @@
-package com.example.project3a;
+package com.example.project3a.presentation.model;
+
+import com.example.project3a.presentation.model.Galaxie;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.project3a;
+package com.example.project3a.presentation.model;
 
 public class Galaxie {
     private String name;

@@ -1,6 +1,6 @@
-package com.example.project3a;
+package com.example.project3a.data;
 
-import java.util.List;
+import com.example.project3a.presentation.model.RestGalaxiesResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
